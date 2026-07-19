@@ -1,6 +1,3 @@
-# DSA-Learning
-My Data Structures &amp; Algorithms journey — solutions, notes and concepts
-
 # 🚀 Data Structures & Algorithms
 
 Welcome to my **Data Structures & Algorithms (DSA)** repository!
