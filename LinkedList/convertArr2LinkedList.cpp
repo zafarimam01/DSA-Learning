@@ -26,6 +26,15 @@ Node* convertarr2ll(vector<int>&arr){
         mover = temp; //
     }
     return head;
+};
+int LengthOf(Node* head){ // to print the length of Linked List;
+    int cnt = 0;
+    Node* temp = head;
+    while(temp){
+        temp = temp->next;
+        cnt++;
+    }
+    return cnt;
 }
 int main(){
     vector<int>v = {23,1,83,51};
@@ -33,8 +42,9 @@ int main(){
     // cout << head->data;
     Node* temp = head;
     while(temp){
-        cout<<temp->data<<" ";
+        cout<<temp->data<<" ";//print all element of linked list;
         temp = temp->next;
     }
+    cout << "\n" << LengthOf(head);
     return 0;
 }
