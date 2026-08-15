@@ -30,6 +30,11 @@ Node* convertarr2ll(vector<int>&arr){
 int main(){
     vector<int>v = {23,1,83,51};
     Node* head = convertarr2ll(v);
-    cout<<head->data;
+    // cout << head->data;
+    Node* temp = head;
+    while(temp){
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
     return 0;
 }
