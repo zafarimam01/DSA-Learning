@@ -2,13 +2,16 @@
 using namespace std;
 void bubbleSort(int n,int arr[]){
     for(int i=n-1; i>=0; i--){
+        bool swap = false;
         for(int j=0; j<=i-1; j++){
             if(arr[j] > arr[j+1]){
                 int temp = arr[j+1];
                 arr[j+1] = arr[j];
                 arr[j] = temp;
+                swap = true;
             }
         }
+        if(!swap) break;
     }
 }
 int main(){
